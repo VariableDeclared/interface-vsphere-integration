@@ -121,7 +121,9 @@ class IntegrationRequest:
     def set_config(self,
                    datastore,
                    folder,
-                   respool_path):
+                   respool_path,
+                   vsphere_region_tag,
+                   vsphere_zone_tag):
         """
         Set the non-credential vsphere config for this request.
         """
@@ -129,4 +131,6 @@ class IntegrationRequest:
             'datastore': datastore,
             'folder': folder,
             'respool_path': respool_path,
+            'vsphere_region_tag': vsphere_region_tag,
+            'vsphere_zone_tag': vsphere_zone_tag
         })

@@ -113,6 +113,14 @@ class VsphereIntegrationRequires(Endpoint):
         ])
 
     @property
+    def vsphere_region_tag(self):
+        return self._received['vsphere_region_tag']
+
+    @property
+    def vsphere_zone_tag(self):
+        return self._received['vsphere_zone_tag']
+
+    @property
     def vsphere_ip(self):
         return self._received['vsphere_ip']
 
